@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7d7f53526265aaa7d1f984b095da9601 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7d7f53526265aaa7d1f984b095da9601" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7d7f53526265aaa7d1f984b095da9601 = L.map(
+                "map_7d7f53526265aaa7d1f984b095da9601",
+                {
+                    center: [40.3885963, -3.7270384],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_581ed289cce3c9d10e79682dfa25e115 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_581ed289cce3c9d10e79682dfa25e115.addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var poly_line_95f06ccb34a91f1f213552bcff9227bb = L.polyline(
+                [[40.3885963, -3.7270384], [40.4347103, -3.6422656], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_e8a2c5f83714b36980b250d7145a1ded = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_17f41077ee19709d4dcb0dbd1791e88d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e8a2c5f83714b36980b250d7145a1ded.setIcon(icon_17f41077ee19709d4dcb0dbd1791e88d);
+        
+    
+        var popup_b6f61b05c64560c0a3627c4729a58ca8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8cf566ce11598e88fd51b51beaaf7bc = $(`<div id="html_f8cf566ce11598e88fd51b51beaaf7bc" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 1)</div>`)[0];
+                popup_b6f61b05c64560c0a3627c4729a58ca8.setContent(html_f8cf566ce11598e88fd51b51beaaf7bc);
+            
+        
+
+        marker_e8a2c5f83714b36980b250d7145a1ded.bindPopup(popup_b6f61b05c64560c0a3627c4729a58ca8)
+        ;
+
+        
+    
+    
+            var marker_4867ca982b9fdff577d098c8d0c3b3c9 = L.marker(
+                [40.4347103, -3.6422656],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_ff7ef864ea6bd61462f7188485e73ba6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4867ca982b9fdff577d098c8d0c3b3c9.setIcon(icon_ff7ef864ea6bd61462f7188485e73ba6);
+        
+    
+        var popup_a86c8389a97cd701a386e7ffd3f08be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e636f5a3dc6f846a952cbab660b70f39 = $(`<div id="html_e636f5a3dc6f846a952cbab660b70f39" style="width: 100.0%; height: 100.0%;">Cliente_18 (Vehículo 1)</div>`)[0];
+                popup_a86c8389a97cd701a386e7ffd3f08be5.setContent(html_e636f5a3dc6f846a952cbab660b70f39);
+            
+        
+
+        marker_4867ca982b9fdff577d098c8d0c3b3c9.bindPopup(popup_a86c8389a97cd701a386e7ffd3f08be5)
+        ;
+
+        
+    
+    
+            var marker_75e0bb1aaae762a2799c25eef5c527f6 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_5faa978ccb6dc533dd2d1070b3a3256c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_75e0bb1aaae762a2799c25eef5c527f6.setIcon(icon_5faa978ccb6dc533dd2d1070b3a3256c);
+        
+    
+        var popup_b8dd7f27dd3ddf449c3a02b139bdc3e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b26e7f1ff19db750c9334b0304d28946 = $(`<div id="html_b26e7f1ff19db750c9334b0304d28946" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 1)</div>`)[0];
+                popup_b8dd7f27dd3ddf449c3a02b139bdc3e7.setContent(html_b26e7f1ff19db750c9334b0304d28946);
+            
+        
+
+        marker_75e0bb1aaae762a2799c25eef5c527f6.bindPopup(popup_b8dd7f27dd3ddf449c3a02b139bdc3e7)
+        ;
+
+        
+    
+    
+            var poly_line_b3510ed21570eac348fa252fbeb4844a = L.polyline(
+                [[40.3885963, -3.7270384], [40.5124455, -3.6778586], [40.4090831, -3.676125], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_31df910ed9780461505c4e251b56b8d6 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_c5890c6d6b70b11a96afd27194d5df0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_31df910ed9780461505c4e251b56b8d6.setIcon(icon_c5890c6d6b70b11a96afd27194d5df0f);
+        
+    
+        var popup_8878ecffa1dcbb5b723b91d85d21f878 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00944c7c3d2a9c319f7770e96caa66f3 = $(`<div id="html_00944c7c3d2a9c319f7770e96caa66f3" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 1)</div>`)[0];
+                popup_8878ecffa1dcbb5b723b91d85d21f878.setContent(html_00944c7c3d2a9c319f7770e96caa66f3);
+            
+        
+
+        marker_31df910ed9780461505c4e251b56b8d6.bindPopup(popup_8878ecffa1dcbb5b723b91d85d21f878)
+        ;
+
+        
+    
+    
+            var marker_a47214a70a74cccfd9370046b861b269 = L.marker(
+                [40.5124455, -3.6778586],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_697c651dff32921c06608b7ddb7ddec0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a47214a70a74cccfd9370046b861b269.setIcon(icon_697c651dff32921c06608b7ddb7ddec0);
+        
+    
+        var popup_c80effc256b151a82d08cb3798dba262 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca4f9a876c53d9d562bd8a6e877404d9 = $(`<div id="html_ca4f9a876c53d9d562bd8a6e877404d9" style="width: 100.0%; height: 100.0%;">Cliente_19 (Vehículo 1)</div>`)[0];
+                popup_c80effc256b151a82d08cb3798dba262.setContent(html_ca4f9a876c53d9d562bd8a6e877404d9);
+            
+        
+
+        marker_a47214a70a74cccfd9370046b861b269.bindPopup(popup_c80effc256b151a82d08cb3798dba262)
+        ;
+
+        
+    
+    
+            var marker_80a128a4a0321b1ac3dbf5c4a8a4520c = L.marker(
+                [40.4090831, -3.676125],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_c078c1966e45150a1c42213f99308205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_80a128a4a0321b1ac3dbf5c4a8a4520c.setIcon(icon_c078c1966e45150a1c42213f99308205);
+        
+    
+        var popup_690622f790c1381d8101eea7099ee3e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d482df667bb14ba9e86cf7e7db99c72e = $(`<div id="html_d482df667bb14ba9e86cf7e7db99c72e" style="width: 100.0%; height: 100.0%;">Cliente_10 (Vehículo 1)</div>`)[0];
+                popup_690622f790c1381d8101eea7099ee3e5.setContent(html_d482df667bb14ba9e86cf7e7db99c72e);
+            
+        
+
+        marker_80a128a4a0321b1ac3dbf5c4a8a4520c.bindPopup(popup_690622f790c1381d8101eea7099ee3e5)
+        ;
+
+        
+    
+    
+            var marker_4ff5199c1737323273fbf5fac9bc73eb = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_2ee7993a03ee220ad1c6685945c6d5d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4ff5199c1737323273fbf5fac9bc73eb.setIcon(icon_2ee7993a03ee220ad1c6685945c6d5d9);
+        
+    
+        var popup_567bd96648b0bda151369840e3722fb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a185375cff81a015681db2f132c7b6b = $(`<div id="html_7a185375cff81a015681db2f132c7b6b" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 1)</div>`)[0];
+                popup_567bd96648b0bda151369840e3722fb5.setContent(html_7a185375cff81a015681db2f132c7b6b);
+            
+        
+
+        marker_4ff5199c1737323273fbf5fac9bc73eb.bindPopup(popup_567bd96648b0bda151369840e3722fb5)
+        ;
+
+        
+    
+    
+            var poly_line_35ff71938597a4bbb3aaec01711baee9 = L.polyline(
+                [[40.3885963, -3.7270384], [40.3862643, -3.6908621], [40.3893878, -3.7004158], [40.4046876, -3.7062622], [40.3719903, -3.6950556], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_f1e0a23ad36487e9061436adece4a6f2 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_3b56bee1be185935a84b7f4e2631eabf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f1e0a23ad36487e9061436adece4a6f2.setIcon(icon_3b56bee1be185935a84b7f4e2631eabf);
+        
+    
+        var popup_8c3cf369a5bc9eae8c4bb14ea89acfc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1accc78a8d20709eeef4d06e2bbf1e7 = $(`<div id="html_c1accc78a8d20709eeef4d06e2bbf1e7" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_8c3cf369a5bc9eae8c4bb14ea89acfc0.setContent(html_c1accc78a8d20709eeef4d06e2bbf1e7);
+            
+        
+
+        marker_f1e0a23ad36487e9061436adece4a6f2.bindPopup(popup_8c3cf369a5bc9eae8c4bb14ea89acfc0)
+        ;
+
+        
+    
+    
+            var marker_671564848f4ebb94c737a83c88ba3d37 = L.marker(
+                [40.3862643, -3.6908621],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_1e34b94dd0b50002735e839170318620 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_671564848f4ebb94c737a83c88ba3d37.setIcon(icon_1e34b94dd0b50002735e839170318620);
+        
+    
+        var popup_b96ab4888914f24e2bd000df940e4816 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96055511c65fe8a0e7633cc4af17a21c = $(`<div id="html_96055511c65fe8a0e7633cc4af17a21c" style="width: 100.0%; height: 100.0%;">Cliente_14 (Vehículo 2)</div>`)[0];
+                popup_b96ab4888914f24e2bd000df940e4816.setContent(html_96055511c65fe8a0e7633cc4af17a21c);
+            
+        
+
+        marker_671564848f4ebb94c737a83c88ba3d37.bindPopup(popup_b96ab4888914f24e2bd000df940e4816)
+        ;
+
+        
+    
+    
+            var marker_544733ac31877aaba1a16b2c89a98f9c = L.marker(
+                [40.3893878, -3.7004158],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_963071cb78309f1e59e6c828bec48f3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_544733ac31877aaba1a16b2c89a98f9c.setIcon(icon_963071cb78309f1e59e6c828bec48f3e);
+        
+    
+        var popup_ce557e717ae8457de31e47ea93f16562 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9bb34b6ffe900cf2d0c41334c9300e1 = $(`<div id="html_a9bb34b6ffe900cf2d0c41334c9300e1" style="width: 100.0%; height: 100.0%;">Cliente_11 (Vehículo 2)</div>`)[0];
+                popup_ce557e717ae8457de31e47ea93f16562.setContent(html_a9bb34b6ffe900cf2d0c41334c9300e1);
+            
+        
+
+        marker_544733ac31877aaba1a16b2c89a98f9c.bindPopup(popup_ce557e717ae8457de31e47ea93f16562)
+        ;
+
+        
+    
+    
+            var marker_06750a4a04ebd7b600f2899ac7b6e6fa = L.marker(
+                [40.4046876, -3.7062622],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_c1ca5c1d910e632eef24b06455e30c96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_06750a4a04ebd7b600f2899ac7b6e6fa.setIcon(icon_c1ca5c1d910e632eef24b06455e30c96);
+        
+    
+        var popup_b13d7a946db45f98254ccbc8591bd1f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f745b0f4951b5be1c1d79f2736c5a7dc = $(`<div id="html_f745b0f4951b5be1c1d79f2736c5a7dc" style="width: 100.0%; height: 100.0%;">Cliente_4 (Vehículo 2)</div>`)[0];
+                popup_b13d7a946db45f98254ccbc8591bd1f7.setContent(html_f745b0f4951b5be1c1d79f2736c5a7dc);
+            
+        
+
+        marker_06750a4a04ebd7b600f2899ac7b6e6fa.bindPopup(popup_b13d7a946db45f98254ccbc8591bd1f7)
+        ;
+
+        
+    
+    
+            var marker_244aca7191a2a3f7b01728c1dc7f8ca2 = L.marker(
+                [40.3719903, -3.6950556],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_9dda144cfc8c7bb87c070583b08324f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_244aca7191a2a3f7b01728c1dc7f8ca2.setIcon(icon_9dda144cfc8c7bb87c070583b08324f3);
+        
+    
+        var popup_e018d9ccdf17519b07e226c15a30fffa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c00a7b9a0c0b0ab35e8010b2b539444 = $(`<div id="html_0c00a7b9a0c0b0ab35e8010b2b539444" style="width: 100.0%; height: 100.0%;">Cliente_5 (Vehículo 2)</div>`)[0];
+                popup_e018d9ccdf17519b07e226c15a30fffa.setContent(html_0c00a7b9a0c0b0ab35e8010b2b539444);
+            
+        
+
+        marker_244aca7191a2a3f7b01728c1dc7f8ca2.bindPopup(popup_e018d9ccdf17519b07e226c15a30fffa)
+        ;
+
+        
+    
+    
+            var marker_669fa96ce2c8a889723665822897b119 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_777c62e5bad0bbe11b431e467290747c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_669fa96ce2c8a889723665822897b119.setIcon(icon_777c62e5bad0bbe11b431e467290747c);
+        
+    
+        var popup_09b2b05eadcb8df088bcbc909cddc485 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b881bdda51dac2aad3eec414d1c28174 = $(`<div id="html_b881bdda51dac2aad3eec414d1c28174" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_09b2b05eadcb8df088bcbc909cddc485.setContent(html_b881bdda51dac2aad3eec414d1c28174);
+            
+        
+
+        marker_669fa96ce2c8a889723665822897b119.bindPopup(popup_09b2b05eadcb8df088bcbc909cddc485)
+        ;
+
+        
+    
+    
+            var poly_line_e1c27212d7c42d3099564b50c0a9b375 = L.polyline(
+                [[40.3885963, -3.7270384], [40.4028283, -3.696878], [40.3340239, -3.7118486], [40.4004807, -3.712361], [40.4061912, -3.6988754], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_cd7ac73e2e6bf99f825985929b977ef0 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_d0de0edfc753ff9a52ee65321da9ac36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cd7ac73e2e6bf99f825985929b977ef0.setIcon(icon_d0de0edfc753ff9a52ee65321da9ac36);
+        
+    
+        var popup_dbc60cf3bea7c818b35bab7771690c5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0bbbf12ac56181c13b1c252c87bc22c = $(`<div id="html_f0bbbf12ac56181c13b1c252c87bc22c" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_dbc60cf3bea7c818b35bab7771690c5c.setContent(html_f0bbbf12ac56181c13b1c252c87bc22c);
+            
+        
+
+        marker_cd7ac73e2e6bf99f825985929b977ef0.bindPopup(popup_dbc60cf3bea7c818b35bab7771690c5c)
+        ;
+
+        
+    
+    
+            var marker_3d0cf3a2745956d1864c94f5a33f48c9 = L.marker(
+                [40.4028283, -3.696878],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_00521c22a2987841ecaf15db2a3a5c64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d0cf3a2745956d1864c94f5a33f48c9.setIcon(icon_00521c22a2987841ecaf15db2a3a5c64);
+        
+    
+        var popup_b35ec2b2ddcbb99280b5e97441af3f2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ada3faba46be913686ce138f2e29b5b = $(`<div id="html_1ada3faba46be913686ce138f2e29b5b" style="width: 100.0%; height: 100.0%;">Cliente_1 (Vehículo 2)</div>`)[0];
+                popup_b35ec2b2ddcbb99280b5e97441af3f2e.setContent(html_1ada3faba46be913686ce138f2e29b5b);
+            
+        
+
+        marker_3d0cf3a2745956d1864c94f5a33f48c9.bindPopup(popup_b35ec2b2ddcbb99280b5e97441af3f2e)
+        ;
+
+        
+    
+    
+            var marker_edb27302a23f59ce7e9a289a5c615fb8 = L.marker(
+                [40.3340239, -3.7118486],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_a487373f41e20a4317a9bf64d18719ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_edb27302a23f59ce7e9a289a5c615fb8.setIcon(icon_a487373f41e20a4317a9bf64d18719ed);
+        
+    
+        var popup_a85b2b5cbee45a06b247f811726809fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dde64a4d5ac98e3e279c93bbb43da028 = $(`<div id="html_dde64a4d5ac98e3e279c93bbb43da028" style="width: 100.0%; height: 100.0%;">Cliente_17 (Vehículo 2)</div>`)[0];
+                popup_a85b2b5cbee45a06b247f811726809fb.setContent(html_dde64a4d5ac98e3e279c93bbb43da028);
+            
+        
+
+        marker_edb27302a23f59ce7e9a289a5c615fb8.bindPopup(popup_a85b2b5cbee45a06b247f811726809fb)
+        ;
+
+        
+    
+    
+            var marker_fbded582de2279aa385fc03d68eae1ef = L.marker(
+                [40.4004807, -3.712361],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_0aa7ea691421445d10995363338b6131 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fbded582de2279aa385fc03d68eae1ef.setIcon(icon_0aa7ea691421445d10995363338b6131);
+        
+    
+        var popup_b36fcae5ae927c41a1deb050e04cf1a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56d874077dfda335c00744e5a799cf1b = $(`<div id="html_56d874077dfda335c00744e5a799cf1b" style="width: 100.0%; height: 100.0%;">Cliente_6 (Vehículo 2)</div>`)[0];
+                popup_b36fcae5ae927c41a1deb050e04cf1a1.setContent(html_56d874077dfda335c00744e5a799cf1b);
+            
+        
+
+        marker_fbded582de2279aa385fc03d68eae1ef.bindPopup(popup_b36fcae5ae927c41a1deb050e04cf1a1)
+        ;
+
+        
+    
+    
+            var marker_a89c9fe13d070c410d5554092cf549ad = L.marker(
+                [40.4061912, -3.6988754],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_1ab2b02e00d3ba6d831858d7750a791f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a89c9fe13d070c410d5554092cf549ad.setIcon(icon_1ab2b02e00d3ba6d831858d7750a791f);
+        
+    
+        var popup_79180cde9e7a124456b20b1f110eed0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3977d8e106458f1951e137998436463d = $(`<div id="html_3977d8e106458f1951e137998436463d" style="width: 100.0%; height: 100.0%;">Cliente_16 (Vehículo 2)</div>`)[0];
+                popup_79180cde9e7a124456b20b1f110eed0f.setContent(html_3977d8e106458f1951e137998436463d);
+            
+        
+
+        marker_a89c9fe13d070c410d5554092cf549ad.bindPopup(popup_79180cde9e7a124456b20b1f110eed0f)
+        ;
+
+        
+    
+    
+            var marker_5e4390b8be7768e1b6b9ccd368ca1a23 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_4a67355fa9a5056617ca91c33487d02e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e4390b8be7768e1b6b9ccd368ca1a23.setIcon(icon_4a67355fa9a5056617ca91c33487d02e);
+        
+    
+        var popup_9a72887b10c1fd284d17557bba9e8fb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dbf01f4c37d8a0d0de9f672b6d10640 = $(`<div id="html_4dbf01f4c37d8a0d0de9f672b6d10640" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_9a72887b10c1fd284d17557bba9e8fb2.setContent(html_4dbf01f4c37d8a0d0de9f672b6d10640);
+            
+        
+
+        marker_5e4390b8be7768e1b6b9ccd368ca1a23.bindPopup(popup_9a72887b10c1fd284d17557bba9e8fb2)
+        ;
+
+        
+    
+    
+            var poly_line_df82893a839a6836b99bfa2272de72f6 = L.polyline(
+                [[40.3885963, -3.7270384], [40.3896366, -3.7353538], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_54859da8f46c3b23648de2d48c1e2553 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_24afc7973a12b4ebad9a7027ddb4920f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_54859da8f46c3b23648de2d48c1e2553.setIcon(icon_24afc7973a12b4ebad9a7027ddb4920f);
+        
+    
+        var popup_25581dee8fdc9dc78e8ffe69715700a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_116d88111c0f56861dedbe688c0bddba = $(`<div id="html_116d88111c0f56861dedbe688c0bddba" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_25581dee8fdc9dc78e8ffe69715700a4.setContent(html_116d88111c0f56861dedbe688c0bddba);
+            
+        
+
+        marker_54859da8f46c3b23648de2d48c1e2553.bindPopup(popup_25581dee8fdc9dc78e8ffe69715700a4)
+        ;
+
+        
+    
+    
+            var marker_2bdbf5b521d3b755ad471d9a0586f027 = L.marker(
+                [40.3896366, -3.7353538],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_e724767b73a8d8dd6aa97f97480fba7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2bdbf5b521d3b755ad471d9a0586f027.setIcon(icon_e724767b73a8d8dd6aa97f97480fba7b);
+        
+    
+        var popup_492c9ce9e52f5237befdc7176c3e4e68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ada559886acc5703d3a64b87beef3a4e = $(`<div id="html_ada559886acc5703d3a64b87beef3a4e" style="width: 100.0%; height: 100.0%;">Cliente_9 (Vehículo 2)</div>`)[0];
+                popup_492c9ce9e52f5237befdc7176c3e4e68.setContent(html_ada559886acc5703d3a64b87beef3a4e);
+            
+        
+
+        marker_2bdbf5b521d3b755ad471d9a0586f027.bindPopup(popup_492c9ce9e52f5237befdc7176c3e4e68)
+        ;
+
+        
+    
+    
+            var marker_f488f1c721ae389590e8d61086bb3c4f = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_1d82b2eb3cfc4c2799ad4a825ef8a861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f488f1c721ae389590e8d61086bb3c4f.setIcon(icon_1d82b2eb3cfc4c2799ad4a825ef8a861);
+        
+    
+        var popup_54eab9f6e1320e859d146e9e28e555db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56121e0e371c13767cf51eaa24b6d7e0 = $(`<div id="html_56121e0e371c13767cf51eaa24b6d7e0" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 2)</div>`)[0];
+                popup_54eab9f6e1320e859d146e9e28e555db.setContent(html_56121e0e371c13767cf51eaa24b6d7e0);
+            
+        
+
+        marker_f488f1c721ae389590e8d61086bb3c4f.bindPopup(popup_54eab9f6e1320e859d146e9e28e555db)
+        ;
+
+        
+    
+    
+            var poly_line_242a2f231e753e2343acbc71d84100a8 = L.polyline(
+                [[40.3885963, -3.7270384], [40.4678501, -3.8145949], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_fa02a8189b23ed75fbec857507777796 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_951396a278d57064fefb03a6fb0cb797 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fa02a8189b23ed75fbec857507777796.setIcon(icon_951396a278d57064fefb03a6fb0cb797);
+        
+    
+        var popup_c7857137b65e27bc9f8472463098c3e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df8f42ac6846ef8f9fb4cb2e40a6902f = $(`<div id="html_df8f42ac6846ef8f9fb4cb2e40a6902f" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 3)</div>`)[0];
+                popup_c7857137b65e27bc9f8472463098c3e6.setContent(html_df8f42ac6846ef8f9fb4cb2e40a6902f);
+            
+        
+
+        marker_fa02a8189b23ed75fbec857507777796.bindPopup(popup_c7857137b65e27bc9f8472463098c3e6)
+        ;
+
+        
+    
+    
+            var marker_26da9d6663604137ecb4821fb6fdbd51 = L.marker(
+                [40.4678501, -3.8145949],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_a12e94ad3a3f8d1a0e4aea08f3471e51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_26da9d6663604137ecb4821fb6fdbd51.setIcon(icon_a12e94ad3a3f8d1a0e4aea08f3471e51);
+        
+    
+        var popup_f8d38e83912dd66b4b90ae25e386bf0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12935bc1e7474069841ee082e2195bcd = $(`<div id="html_12935bc1e7474069841ee082e2195bcd" style="width: 100.0%; height: 100.0%;">Cliente_20 (Vehículo 3)</div>`)[0];
+                popup_f8d38e83912dd66b4b90ae25e386bf0b.setContent(html_12935bc1e7474069841ee082e2195bcd);
+            
+        
+
+        marker_26da9d6663604137ecb4821fb6fdbd51.bindPopup(popup_f8d38e83912dd66b4b90ae25e386bf0b)
+        ;
+
+        
+    
+    
+            var marker_573d53e95e257437f3cdc28f569daf26 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_3f6534d8a5f29dc328ce10eca9ce8ac3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_573d53e95e257437f3cdc28f569daf26.setIcon(icon_3f6534d8a5f29dc328ce10eca9ce8ac3);
+        
+    
+        var popup_20e792e170dae14d6ef7e7cb2a27b3fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99b6fc492688795fcb7dd7380077833 = $(`<div id="html_a99b6fc492688795fcb7dd7380077833" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 3)</div>`)[0];
+                popup_20e792e170dae14d6ef7e7cb2a27b3fb.setContent(html_a99b6fc492688795fcb7dd7380077833);
+            
+        
+
+        marker_573d53e95e257437f3cdc28f569daf26.bindPopup(popup_20e792e170dae14d6ef7e7cb2a27b3fb)
+        ;
+
+        
+    
+    
+            var poly_line_66a6eeaeac7efbac020f09f3ad099f15 = L.polyline(
+                [[40.3885963, -3.7270384], [40.4570586, -3.7035106], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_a4b711d56b6f31151ed899018a4f4692 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_cceb6a92e1f26363ced7a7f9c30b2605 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a4b711d56b6f31151ed899018a4f4692.setIcon(icon_cceb6a92e1f26363ced7a7f9c30b2605);
+        
+    
+        var popup_e1135c9088265ce39ed31dbac3a87b60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb80025c7ba1458833efbb7aa8cdc08e = $(`<div id="html_eb80025c7ba1458833efbb7aa8cdc08e" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 4)</div>`)[0];
+                popup_e1135c9088265ce39ed31dbac3a87b60.setContent(html_eb80025c7ba1458833efbb7aa8cdc08e);
+            
+        
+
+        marker_a4b711d56b6f31151ed899018a4f4692.bindPopup(popup_e1135c9088265ce39ed31dbac3a87b60)
+        ;
+
+        
+    
+    
+            var marker_944fc72b5b466681aa73ad8bc78d102c = L.marker(
+                [40.4570586, -3.7035106],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_9f6ff31d521164f32ed536895aed4157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_944fc72b5b466681aa73ad8bc78d102c.setIcon(icon_9f6ff31d521164f32ed536895aed4157);
+        
+    
+        var popup_08eee41cf8bb5a2322e74ebc68e52ff3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aef157c809685633eb333286ad6a1d4b = $(`<div id="html_aef157c809685633eb333286ad6a1d4b" style="width: 100.0%; height: 100.0%;">Cliente_7 (Vehículo 4)</div>`)[0];
+                popup_08eee41cf8bb5a2322e74ebc68e52ff3.setContent(html_aef157c809685633eb333286ad6a1d4b);
+            
+        
+
+        marker_944fc72b5b466681aa73ad8bc78d102c.bindPopup(popup_08eee41cf8bb5a2322e74ebc68e52ff3)
+        ;
+
+        
+    
+    
+            var marker_dc950d0576bdc01dbaa5c5cb6bbf230c = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_185157359e5b95810d1e24e88bc5ecae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dc950d0576bdc01dbaa5c5cb6bbf230c.setIcon(icon_185157359e5b95810d1e24e88bc5ecae);
+        
+    
+        var popup_042263d05e73c8b22b9d198d3df90e9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea337e568e9c441cde220bda7e33e09a = $(`<div id="html_ea337e568e9c441cde220bda7e33e09a" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 4)</div>`)[0];
+                popup_042263d05e73c8b22b9d198d3df90e9f.setContent(html_ea337e568e9c441cde220bda7e33e09a);
+            
+        
+
+        marker_dc950d0576bdc01dbaa5c5cb6bbf230c.bindPopup(popup_042263d05e73c8b22b9d198d3df90e9f)
+        ;
+
+        
+    
+    
+            var poly_line_875a038938f965894fa0bdc86035e44a = L.polyline(
+                [[40.3885963, -3.7270384], [40.4343313, -3.7045345], [40.4718405, -3.7080787], [40.4558202, -3.7003498], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_f9d08e6f057284531c3fe8fc39d4aa6e = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_d1e112b3717804b3170dd26d157af377 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f9d08e6f057284531c3fe8fc39d4aa6e.setIcon(icon_d1e112b3717804b3170dd26d157af377);
+        
+    
+        var popup_874cc525ccb780936fd6a3d7674cfeff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_857368138b3ae0518e82aba39ace4965 = $(`<div id="html_857368138b3ae0518e82aba39ace4965" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 4)</div>`)[0];
+                popup_874cc525ccb780936fd6a3d7674cfeff.setContent(html_857368138b3ae0518e82aba39ace4965);
+            
+        
+
+        marker_f9d08e6f057284531c3fe8fc39d4aa6e.bindPopup(popup_874cc525ccb780936fd6a3d7674cfeff)
+        ;
+
+        
+    
+    
+            var marker_fbcc8fb2d7f922eb7a4634acdbdedd6a = L.marker(
+                [40.4343313, -3.7045345],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_5149e6dab1e4637617c02727d4e8805a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fbcc8fb2d7f922eb7a4634acdbdedd6a.setIcon(icon_5149e6dab1e4637617c02727d4e8805a);
+        
+    
+        var popup_b034da1f1174ebe6462b2bf55ed8f3bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c45cd0e79220ff4489a34f9121b3c11 = $(`<div id="html_3c45cd0e79220ff4489a34f9121b3c11" style="width: 100.0%; height: 100.0%;">Cliente_13 (Vehículo 4)</div>`)[0];
+                popup_b034da1f1174ebe6462b2bf55ed8f3bf.setContent(html_3c45cd0e79220ff4489a34f9121b3c11);
+            
+        
+
+        marker_fbcc8fb2d7f922eb7a4634acdbdedd6a.bindPopup(popup_b034da1f1174ebe6462b2bf55ed8f3bf)
+        ;
+
+        
+    
+    
+            var marker_0e1ed6cd985e9545ca370aad8aacd756 = L.marker(
+                [40.4718405, -3.7080787],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_99b477cea27c210618cfede63e043a6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0e1ed6cd985e9545ca370aad8aacd756.setIcon(icon_99b477cea27c210618cfede63e043a6e);
+        
+    
+        var popup_31def6a32f70b1fe112d36d4065e17de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b81294c39b6cea102425a32b7651e01 = $(`<div id="html_7b81294c39b6cea102425a32b7651e01" style="width: 100.0%; height: 100.0%;">Cliente_3 (Vehículo 4)</div>`)[0];
+                popup_31def6a32f70b1fe112d36d4065e17de.setContent(html_7b81294c39b6cea102425a32b7651e01);
+            
+        
+
+        marker_0e1ed6cd985e9545ca370aad8aacd756.bindPopup(popup_31def6a32f70b1fe112d36d4065e17de)
+        ;
+
+        
+    
+    
+            var marker_024778b4ada56b2b8e4dec73dfc5d75e = L.marker(
+                [40.4558202, -3.7003498],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_8b88770b11ad9757a462f47ec9d92698 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_024778b4ada56b2b8e4dec73dfc5d75e.setIcon(icon_8b88770b11ad9757a462f47ec9d92698);
+        
+    
+        var popup_fe84746412b644dd5426ad65f2465ce7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5593cdb141a2abc3f9fe6cf74ece1c55 = $(`<div id="html_5593cdb141a2abc3f9fe6cf74ece1c55" style="width: 100.0%; height: 100.0%;">Cliente_2 (Vehículo 4)</div>`)[0];
+                popup_fe84746412b644dd5426ad65f2465ce7.setContent(html_5593cdb141a2abc3f9fe6cf74ece1c55);
+            
+        
+
+        marker_024778b4ada56b2b8e4dec73dfc5d75e.bindPopup(popup_fe84746412b644dd5426ad65f2465ce7)
+        ;
+
+        
+    
+    
+            var marker_1144bc0affe039658b12acb3169f89f7 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_50e3c5973a16d648ad00718a5ffff0af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1144bc0affe039658b12acb3169f89f7.setIcon(icon_50e3c5973a16d648ad00718a5ffff0af);
+        
+    
+        var popup_cb8c6f1a49bf51af2e27e72a9a93a4c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33cf2343c1d7c1750a7efacfc9dbf3f1 = $(`<div id="html_33cf2343c1d7c1750a7efacfc9dbf3f1" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 4)</div>`)[0];
+                popup_cb8c6f1a49bf51af2e27e72a9a93a4c0.setContent(html_33cf2343c1d7c1750a7efacfc9dbf3f1);
+            
+        
+
+        marker_1144bc0affe039658b12acb3169f89f7.bindPopup(popup_cb8c6f1a49bf51af2e27e72a9a93a4c0)
+        ;
+
+        
+    
+    
+            var poly_line_b21f018357ac2159668074c45b91d071 = L.polyline(
+                [[40.3885963, -3.7270384], [40.4468717, -3.5865153], [40.4265429, -3.6080509], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_bd7e776dc1345d123d702e0b784d9ff3 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_421bceb99a189676f57a903afbaf8874 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bd7e776dc1345d123d702e0b784d9ff3.setIcon(icon_421bceb99a189676f57a903afbaf8874);
+        
+    
+        var popup_d9245d42d9d4bc17be62ee4bbdafab10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a643378b233896b23c8fdd690e756e4d = $(`<div id="html_a643378b233896b23c8fdd690e756e4d" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 5)</div>`)[0];
+                popup_d9245d42d9d4bc17be62ee4bbdafab10.setContent(html_a643378b233896b23c8fdd690e756e4d);
+            
+        
+
+        marker_bd7e776dc1345d123d702e0b784d9ff3.bindPopup(popup_d9245d42d9d4bc17be62ee4bbdafab10)
+        ;
+
+        
+    
+    
+            var marker_0591adbcd22b1206bf1017f9b27f1410 = L.marker(
+                [40.4468717, -3.5865153],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_34fb286cda855811356634fde3b58512 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0591adbcd22b1206bf1017f9b27f1410.setIcon(icon_34fb286cda855811356634fde3b58512);
+        
+    
+        var popup_559bd96c44eb841c39f617d0dc6b56be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6e98426e3bf9bd4d10532aefbc58688 = $(`<div id="html_d6e98426e3bf9bd4d10532aefbc58688" style="width: 100.0%; height: 100.0%;">Cliente_8 (Vehículo 5)</div>`)[0];
+                popup_559bd96c44eb841c39f617d0dc6b56be.setContent(html_d6e98426e3bf9bd4d10532aefbc58688);
+            
+        
+
+        marker_0591adbcd22b1206bf1017f9b27f1410.bindPopup(popup_559bd96c44eb841c39f617d0dc6b56be)
+        ;
+
+        
+    
+    
+            var marker_ff2ae46067c47dee56095114c0443961 = L.marker(
+                [40.4265429, -3.6080509],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_1694359aa996ad6aebecbdac898e81b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff2ae46067c47dee56095114c0443961.setIcon(icon_1694359aa996ad6aebecbdac898e81b5);
+        
+    
+        var popup_3c5ba791c023b449073a4b6a37046db2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4598460350048e3db8b6cfaf4f7c84b = $(`<div id="html_c4598460350048e3db8b6cfaf4f7c84b" style="width: 100.0%; height: 100.0%;">Cliente_15 (Vehículo 5)</div>`)[0];
+                popup_3c5ba791c023b449073a4b6a37046db2.setContent(html_c4598460350048e3db8b6cfaf4f7c84b);
+            
+        
+
+        marker_ff2ae46067c47dee56095114c0443961.bindPopup(popup_3c5ba791c023b449073a4b6a37046db2)
+        ;
+
+        
+    
+    
+            var marker_093656cae94ae5bff8c0408fb1deda91 = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_fbdb06b7b4b3c6f53645732efc34440f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_093656cae94ae5bff8c0408fb1deda91.setIcon(icon_fbdb06b7b4b3c6f53645732efc34440f);
+        
+    
+        var popup_5675b66398350d950b42518700243053 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4a89cedf90b7967d546b2b10d237bec = $(`<div id="html_d4a89cedf90b7967d546b2b10d237bec" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 5)</div>`)[0];
+                popup_5675b66398350d950b42518700243053.setContent(html_d4a89cedf90b7967d546b2b10d237bec);
+            
+        
+
+        marker_093656cae94ae5bff8c0408fb1deda91.bindPopup(popup_5675b66398350d950b42518700243053)
+        ;
+
+        
+    
+    
+            var poly_line_3790b8031f1b867bdf6ae7f66c5517dd = L.polyline(
+                [[40.3885963, -3.7270384], [40.4117919, -3.6593671], [40.3885963, -3.7270384]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var marker_d627dcbc180c6bb643576574a66d2b5a = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_89da7885ffccbbb77e41678d94d4d278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d627dcbc180c6bb643576574a66d2b5a.setIcon(icon_89da7885ffccbbb77e41678d94d4d278);
+        
+    
+        var popup_cb704a2d2bef3d4f6e4afa5a6a4bc4b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e200bdf7890dbf17a27d77205f4d8c8f = $(`<div id="html_e200bdf7890dbf17a27d77205f4d8c8f" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 6)</div>`)[0];
+                popup_cb704a2d2bef3d4f6e4afa5a6a4bc4b5.setContent(html_e200bdf7890dbf17a27d77205f4d8c8f);
+            
+        
+
+        marker_d627dcbc180c6bb643576574a66d2b5a.bindPopup(popup_cb704a2d2bef3d4f6e4afa5a6a4bc4b5)
+        ;
+
+        
+    
+    
+            var marker_330f923e5a4b33153390f83564363f23 = L.marker(
+                [40.4117919, -3.6593671],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_9f261a35c15cc84370d39f6d2c327330 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_330f923e5a4b33153390f83564363f23.setIcon(icon_9f261a35c15cc84370d39f6d2c327330);
+        
+    
+        var popup_44f232fe360e90f7d6c401922c434e34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2791c38e72d434fc830683bd35ce66e0 = $(`<div id="html_2791c38e72d434fc830683bd35ce66e0" style="width: 100.0%; height: 100.0%;">Cliente_12 (Vehículo 6)</div>`)[0];
+                popup_44f232fe360e90f7d6c401922c434e34.setContent(html_2791c38e72d434fc830683bd35ce66e0);
+            
+        
+
+        marker_330f923e5a4b33153390f83564363f23.bindPopup(popup_44f232fe360e90f7d6c401922c434e34)
+        ;
+
+        
+    
+    
+            var marker_88eaad1e3a2164dc2f4e96028fa79a2a = L.marker(
+                [40.3885963, -3.7270384],
+                {
+}
+            ).addTo(map_7d7f53526265aaa7d1f984b095da9601);
+        
+    
+            var icon_4f52ff9edb99015a5d47683f978006e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_88eaad1e3a2164dc2f4e96028fa79a2a.setIcon(icon_4f52ff9edb99015a5d47683f978006e6);
+        
+    
+        var popup_980e8960d8b35b5e69997d99df5d0cb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0015d9990a1b2b088a17d785dd61bf8d = $(`<div id="html_0015d9990a1b2b088a17d785dd61bf8d" style="width: 100.0%; height: 100.0%;">Almacén (Vehículo 6)</div>`)[0];
+                popup_980e8960d8b35b5e69997d99df5d0cb4.setContent(html_0015d9990a1b2b088a17d785dd61bf8d);
+            
+        
+
+        marker_88eaad1e3a2164dc2f4e96028fa79a2a.bindPopup(popup_980e8960d8b35b5e69997d99df5d0cb4)
+        ;
+
+        
+    
+</script>
+</html>
