@@ -1,0 +1,12 @@
+Las librerías de python necesarias para este proyecto son las siguientes:
+
+-pandas
+-numpy
+-tqdm
+-scikit-learn
+-matplotlib
+-seaborn
+-deap
+-networkx
+-folium
+-statsmodels
